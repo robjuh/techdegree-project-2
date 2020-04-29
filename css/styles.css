@@ -1,0 +1,252 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6, a {
+font-family: 'Montserrat', sans-serif;
+}
+
+img {
+max-width: 100%;
+}
+
+.wrap {
+text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.name {
+font-family: 'Roboto', sans-serif;
+font-size: 25px;
+margin-bottom: 25px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.main-header {
+padding: 25px 0px;
+}
+
+.main-nav li a {
+color: black;
+}
+
+.main-header li {
+background-color: white;
+margin: 5px 10px;
+padding: 10px;
+text-decoration:none;
+}
+
+.main-header li a {
+text-decoration:none;
+font-weight: bold;
+}
+
+.main-header, .contact, footer {
+background-color:#f2f2f2;
+}
+
+.intro {
+margin: 20px 50px;
+}
+
+.text {
+margin: 25px 25px;
+}
+
+.portfolio {
+padding: 50px 10px;
+}
+
+.portfolio img {
+margin: 20px 0;
+}
+
+.portfolio h1 {
+margin-bottom: 10px;
+}
+
+#portfolio-style {
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.contact {
+padding-top: 50px;
+padding-bottom: 40px;
+}
+
+#contact-style {
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.align-left {
+float: left;
+padding-left: 10px;
+}
+
+.align-right {
+ float: right;
+ padding-right: 10px;
+
+}	
+
+footer {
+margin-top: 1px;
+padding-top: 1px;
+} 
+
+.mobile-footer p{
+padding-top: 20px;
+padding-bottom: 20px;
+background-color:#f2f2f2;
+}
+
+.mobile-footer a {
+text-decoration: none;
+font-weight: bold;
+color: black;
+}
+
+.tab-foot {
+display: none;
+}
+
+ /* ---- Float clearfix ---- */
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+@media screen and (min-width: 768px) {
+
+.main-header li {
+display: inline-block;
+background-color:#f2f2f2;
+}
+
+.intro {
+margin: 20px 10px;
+
+}
+.text {
+margin: 0;
+}
+
+.right {
+width: 40%;
+float: right;
+}
+
+.left {
+width: 60%;
+float: left;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.portfolio article {
+float: left;
+width: 50%;
+padding: 5px;
+}
+
+#contact-style {
+padding-bottom: 25px;
+}
+
+.text {
+width: 75%;
+margin: auto;
+padding-bottom: 25px;
+}
+
+.tab-foot {
+display: initial;
+}
+
+.mobile-footer {
+display: none;
+}
+
+.main-foot {
+float: right;
+padding: 20px 0px;
+}
+
+.foot-name {
+margin-left: 15px;
+padding: 20px 0px;
+}
+
+.foot-name,
+.main-foot li {
+float: left;
+}
+
+.main-foot li {
+margin-right: 20px;
+}
+
+.main-foot li a {
+color: black;
+text-decoration: none;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+	
+body {
+	background-color:#f2f2f2;
+}
+
+.portfolio {
+	background-color: white;
+}
+
+.main-nav {
+	float: right;
+	}
+	
+.name,
+.main-nav li {
+	float: left;
+}
+	
+.name {
+	margin-left: 50px;
+}
+	
+.main-nav li {
+	margin-left: 20px;
+	
+}
+
+	
+.portfolio article {
+	float: left;
+	width: 33%;
+	padding: 10px;
+}
+
+}
